@@ -1,2 +1,2 @@
-### todolist with react js
+### TODOLIST WITH REACT
 ***
