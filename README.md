@@ -1,3 +1,19 @@
+# TODOLIST WITH REACT
+
+---
+
+자바스크립트 리액트 프레임워크를 연습하기 위해 만든 간단한 투두리스트입니다.
+
+## 기능
+
+1. input에 텍스트 입력 후 버튼 클릭 시 목록에 추가
+2. 목록 삭제 버튼 구현
+3. 체크박스 포함 이름 클릭시 스타일 변화
+
+### 추가작업
+
+선택된 작업에 대해 위 / 아래 버튼을 통해 목록 순서 변경 구현
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
