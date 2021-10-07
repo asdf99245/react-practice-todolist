@@ -26,9 +26,7 @@ const reducer = (state, action) => {
         todo.id === action.id ? { ...todo, done: !todo.done } : todo
       );
     case 'MOVE_UP_TODO':
-      idx = state.findIndex(
-        (todo) => JSON.stringify(todo) === JSON.stringify(action.todo)
-      );
+      idx = state.findIndex((todo) => todo.id === action.todo.id);
       if (idx === 0) return state;
       tmp = state[idx - 1];
       return [
@@ -38,9 +36,7 @@ const reducer = (state, action) => {
         ...state.slice(idx + 1),
       ];
     case 'MOVE_DOWN_TODO':
-      idx = state.findIndex(
-        (todo) => JSON.stringify(todo) === JSON.stringify(action.todo)
-      );
+      idx = state.findIndex((todo) => todo.id === action.todo.id);
       if (idx === state.length - 1) return state;
       tmp = state[idx + 1];
       return [
